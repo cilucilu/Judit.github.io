@@ -1,0 +1,228 @@
+body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f8f5de;
+  background-image: linear-gradient(to right, rgba(255,210,0,0.4), rgba(200, 160, 0, 0.1) 11%, rgba(0,0,0,0) 35%, rgba(200, 160, 0, 0.1) 65%);
+  box-shadow: inset 0 0 75px rgba(255,210,0,0.5), inset 0 0 20px rgba(255,210,0,0.6), inset 0 0 30px rgba(220,120,0,0.9);
+  color: rgba(0,0,0,0.5);
+}
+
+#title {
+  position: absolute;
+  top: 0;
+  left: 150px;
+  right: 0px;
+  height: 50px;
+  font-size: 13px;
+  text-align: center;
+}
+
+#map {
+  position: absolute;
+  top: 50px;
+  left: 190px;
+  right: 40px;
+  bottom: 85px;
+  box-shadow: 1px 1px 15px 0px #4d3d00;
+}
+
+#leftside {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  bottom: 70px;
+  padding-left: 20px;
+  width: 150px;
+}
+
+#text {
+  position: absolute;
+  top: 0px;
+  height: 26%;
+}
+
+#sep1 {
+  position: absolute;
+  top: 26%;
+  height: 8%;
+  text-align: center;
+}
+
+#menu {
+  position: absolute;
+  top: 34%;
+  height: 26%;
+}
+
+#sep2 {
+  position: absolute;
+  bottom: 35%;
+  height: 8%;
+  text-align: center;
+}
+
+#features {
+  position: absolute;
+  bottom: 0;
+  overflow: auto;
+  height: 35%;
+}
+
+#console {
+  position: absolute;
+  bottom: 15px;
+  padding-bottom: 30px;
+  left: 180px;
+  right: 40px;
+  height: 40px;
+  
+}
+
+h1 {
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 12px;
+  border-top: 5px;
+  line-height: 0px;
+}
+
+p {
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+#pd {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #7b5d1a;
+}
+
+.row {
+height: 15px;
+width: 100%;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a background */
+.container input:checked ~ .checkmark {
+  background-color: black;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 3px;
+  left: 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #7b5d1a;
+}
+
+.row {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;  
+  background: #5a3d00;
+  outline: none;
+  opacity: 0.5;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.row:hover {
+  opacity: 0.8;
+}
+
+.row::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: black;
+  cursor: pointer;
+}
